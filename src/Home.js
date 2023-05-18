@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 
 
 const Home = () => {
-    const {data:posts,isLoading,error,setData}= useFetch("http://localhost:8000/posts")
+    const {data:posts,isLoading,error,setData}= useFetch("https://my-json-server.typicode.com/abdo160996/blog-app/posts")
     const deletePost = (id) => {
         setData(posts.filter((post) => post.id !== id))
     }

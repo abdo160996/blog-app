@@ -19,7 +19,7 @@ const PostEdit = () => {
         setIsLoading(true)
         const dataObj = { title, content, author }
         setTimeout(() => {
-            fetch(`http://localhost:8000/posts/${postDate.id}`, {
+            fetch(`https://my-json-server.typicode.com/abdo160996/blog-app/posts/${postDate.id}`, {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",

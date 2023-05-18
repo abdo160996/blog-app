@@ -15,7 +15,7 @@ const Create = () => {
         setIsLoading(true)
         const dataObj = { title, content, author }
         setTimeout(() => {
-            fetch('http://localhost:8000/posts', {
+            fetch('https://my-json-server.typicode.com/abdo160996/blog-app/posts', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",

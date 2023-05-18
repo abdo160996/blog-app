@@ -8,8 +8,13 @@ import Swal from 'sweetalert';
 
 const PostDetails = () => {
     const { postId } = useParams()
+<<<<<<< HEAD
     const { data: postDetails, isLoading, error } = useFetch(`http://localhost:8000/posts/${postId}`)
     
+=======
+    const { data: postDetails, isLoading, error } = useFetch(`https://my-json-server.typicode.com/abdo160996/blog-app/posts/${postId}`)
+    const MySwal = withReactContent(Swal)
+>>>>>>> e9827b07eee477340567806dace31f1b7fa03678
     const navigate = useNavigate()
 
     const deleteP = () => {
@@ -24,7 +29,7 @@ const PostDetails = () => {
 
         }).then((res) => {
             if (res.isConfirmed) {
-                fetch(`http://localhost:8000/posts/${postId}`, {
+                fetch(`https://my-json-server.typicode.com/abdo160996/blog-app/posts/${postId}`, {
                     method: "DELETE"
                 }).then(() => {
                     Swal.fire({
