@@ -8,7 +8,7 @@ import withReactContent from 'sweetalert2-react-content'
 
 const PostDetails = () => {
     const { postId } = useParams()
-    const { data: postDetails, isLoading, error } = useFetch(`http://localhost:8000/posts/${postId}`)
+    const { data: postDetails, isLoading, error } = useFetch(`https://my-json-server.typicode.com/abdo160996/blog-app/posts/${postId}`)
     const MySwal = withReactContent(Swal)
     const navigate = useNavigate()
 
@@ -24,7 +24,7 @@ const PostDetails = () => {
 
         }).then((res) => {
             if (res.isConfirmed) {
-                fetch(`http://localhost:8000/posts/${postId}`, {
+                fetch(`https://my-json-server.typicode.com/abdo160996/blog-app/posts/${postId}`, {
                     method: "DELETE"
                 }).then(() => {
                     MySwal.fire({
