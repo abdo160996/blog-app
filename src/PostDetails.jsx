@@ -47,8 +47,8 @@ const PostDetails = () => {
                 <article>
                     <h1 className="font-bold mb-3">{postDetails?.title}</h1>
                     <p className="bg-gray-100 p-2 rounded-md">{postDetails?.content}</p>
-                    <button className='px-2 py-1 text-sm rounded-full bg-red-400 transition-colors hover:bg-red-700 text-white' onClick={deleteP}>DELETE</button>
-                    <Link to={`/posts/edit/${postId}`} state={postDetails} className="bg-red-600 text-white">
+                    <button className='px-2 py-1 text-sm rounded-full bg-red-500 transition-colors hover:bg-red-700 text-white' onClick={deleteP}>DELETE</button>
+                    <Link to={`/posts/edit/${postId}`} state={postDetails} className="px-2 py-1 ml-1 text-sm rounded-full bg-red-400 text-white">
                     Edit </Link>
                 </article>
 
