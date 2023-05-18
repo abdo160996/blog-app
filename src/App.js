@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <div className="content">
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          <Route path='/*' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/create' element={<Create/>}></Route>
           <Route path='/posts/:postId' element={<PostDetails/>}></Route>
