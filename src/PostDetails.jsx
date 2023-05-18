@@ -2,7 +2,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
 import Swal from 'sweetalert';
- 
+
 
 
 
@@ -14,7 +14,7 @@ const PostDetails = () => {
 
     const deleteP = () => {
 
-        Swal.fire({
+        Swal({
             titleText: "Are you sure?",
             text: "You won't be able to revert this!",
             showCloseButton: true,
@@ -27,7 +27,8 @@ const PostDetails = () => {
                 fetch(`https://my-json-server.typicode.com/abdo160996/blog-app/posts/${postId}`, {
                     method: "DELETE"
                 }).then(() => {
-                    Swal.fire({
+                    Swal({
+                        
                         title: 'Deleted!',
                     })
                     navigate('/')
