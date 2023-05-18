@@ -1,7 +1,7 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
+
+import Swal from 'sweetalert';
  
 
 
@@ -9,12 +9,12 @@ import withReactContent from 'sweetalert2-react-content'
 const PostDetails = () => {
     const { postId } = useParams()
     const { data: postDetails, isLoading, error } = useFetch(`http://localhost:8000/posts/${postId}`)
-    const MySwal = withReactContent(Swal)
+    
     const navigate = useNavigate()
 
     const deleteP = () => {
 
-        MySwal.fire({
+        Swal.fire({
             titleText: "Are you sure?",
             text: "You won't be able to revert this!",
             showCloseButton: true,
@@ -27,7 +27,7 @@ const PostDetails = () => {
                 fetch(`http://localhost:8000/posts/${postId}`, {
                     method: "DELETE"
                 }).then(() => {
-                    MySwal.fire({
+                    Swal.fire({
                         title: 'Deleted!',
                     })
                     navigate('/')
