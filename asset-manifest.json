@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/abdo160996/blog-app/static/css/main.087842ed.css",
+    "main.js": "/abdo160996/blog-app/static/js/main.a5f17f83.js",
+    "static/media/logo.svg": "/abdo160996/blog-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/abdo160996/blog-app/index.html",
+    "main.087842ed.css.map": "/abdo160996/blog-app/static/css/main.087842ed.css.map",
+    "main.a5f17f83.js.map": "/abdo160996/blog-app/static/js/main.a5f17f83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.087842ed.css",
+    "static/js/main.a5f17f83.js"
+  ]
+}
